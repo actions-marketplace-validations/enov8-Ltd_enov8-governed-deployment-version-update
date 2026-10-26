@@ -101,7 +101,7 @@ Use them in a later step, for example to notify only when something was auto-cre
 ```yaml
       - name: Enov8 - Deployment Version Update
         id: enov8
-        uses: enov8-Ltd/enov8-update-deployment-version@v1
+        uses: enov8-Ltd/enov8-governed-deployment-version-update@v1.0.0
         with:
           # ...inputs...
 
@@ -174,7 +174,7 @@ jobs:
 
     steps:
       - name: Enov8 - Deployment Version Update
-        uses: enov8-Ltd/enov8-update-deployment-version@v1
+        uses: enov8-Ltd/enov8-governed-deployment-version-update@v1.0.0
         with:
           enov8_url: ${{ vars.ENOV8_BASE_URL }}
           app_id: ${{ secrets.ENOV8_APP_ID }}
@@ -199,7 +199,7 @@ jobs:
 
     steps:
       - name: Enov8 - MicroService Update
-        uses: enov8-Ltd/enov8-update-deployment-version@v1
+        uses: enov8-Ltd/enov8-governed-deployment-version-update@v1.0.0
         with:
           enov8_url: ${{ vars.ENOV8_BASE_URL }}
           app_id: ${{ secrets.ENOV8_APP_ID }}
@@ -214,7 +214,7 @@ jobs:
 
 ```yaml
       - name: Enov8 - Deployment Version Update
-        uses: enov8-Ltd/enov8-update-deployment-version@v1
+        uses: enov8-Ltd/enov8-governed-deployment-version-update@v1.0.0
         with:
           enov8_url: ${{ vars.ENOV8_BASE_URL }}
           app_id: ${{ secrets.ENOV8_APP_ID }}
@@ -234,7 +234,7 @@ jobs:
 
 ```yaml
       - name: Enov8 - Deployment Version Update
-        uses: enov8-Ltd/enov8-update-deployment-version@v1
+        uses: enov8-Ltd/enov8-governed-deployment-version-update@v1.0.0
         with:
           enov8_url: ${{ vars.ENOV8_BASE_URL }}
           app_id: ${{ secrets.ENOV8_APP_ID }}
@@ -260,7 +260,7 @@ jobs:
 
 ```yaml
       - name: Enov8 - Deployment Version Update
-        uses: enov8-Ltd/enov8-update-deployment-version@v1
+        uses: enov8-Ltd/enov8-governed-deployment-version-update@v1.0.0
         with:
           enov8_url: ${{ vars.ENOV8_BASE_URL }}
           app_id: ${{ secrets.ENOV8_APP_ID }}
@@ -287,7 +287,7 @@ If `systemInstance` already exists, `metadata` can be `{}` — nothing below the
 
 ```yaml
       - name: Enov8 - Deployment Version Update
-        uses: enov8-Ltd/enov8-update-deployment-version@v1
+        uses: enov8-Ltd/enov8-governed-deployment-version-update@v1.0.0
         with:
           enov8_url: ${{ vars.ENOV8_BASE_URL }}
           app_id: ${{ secrets.ENOV8_APP_ID }}
@@ -328,7 +328,7 @@ jobs:
     environment: prod
     steps:
       - name: Enov8 - Deployment Version Update
-        uses: enov8-Ltd/enov8-update-deployment-version@v1
+        uses: enov8-Ltd/enov8-governed-deployment-version-update@v1.0.0
         with:
           enov8_url: ${{ vars.ENOV8_BASE_URL }}
           app_id: ${{ secrets.ENOV8_APP_ID }}
@@ -350,7 +350,7 @@ jobs:
 
 ```yaml
       - name: Enov8 - Governed Deployment Version Update
-        uses: enov8-Ltd/enov8-update-deployment-version@v1
+        uses: enov8-Ltd/enov8-governed-deployment-version-update@v1.0.0
         with:
           enov8_url: ${{ secrets.ENOV8_BASE_URL }}
           app_id: ${{ secrets.ENOV8_APP_ID }}
@@ -608,7 +608,3 @@ This action makes sure the **person who ran the workflow** has access in Enov8. 
 
 ## 📩 Support
 For assistance, contact support@enov8.com.
-
-## 📄 License
-
-[MIT](LICENSE)
